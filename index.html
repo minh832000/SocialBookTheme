@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>Social Book</title>
+
+      <link rel="icon" href="/favicon.png">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="theme-color" content="#ffffff">
+
+      <link rel="stylesheet" href="/icofont/icofont.min.css">
+      <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+      <nav>
+            <div class="nav-left">
+                  <h1 class="logo-site">Social Book</h1>
+                  <ul>
+                        <li>
+                              <i class="icofont-alarm"></i>
+                        </li>
+                        <li>
+                              <i class="icofont-ui-messaging"></i>
+                        </li>
+                        <li>
+                              <i class="icofont-ui-video-play"></i>
+                        </li>
+                  </ul>
+            </div>
+            <div class="nav-right">
+                  <div class="search-box">
+                        <div class="search-icon">
+                              <i class="icofont-search-1"></i>
+                        </div>
+                        <input type="text" placeholder="Typing something here...">
+                  </div>
+                  <div class="nav-user-icon online" onclick="showSettingMenu()">
+                        <img src="image/user-avatar.png" alt="User Avatar">
+                  </div>
+                  <div class="setting-menu">
+                        <div class="setting-menu-item">
+                              <div class="setting-menu-item-name">
+                                    <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                    <div class="user-info">
+                                          <p>Minh Vo</p>
+                                          <a href="#">See your profile</a>
+                                    </div>
+                              </div>
+                              <div id="themeModeToggle" class="theme-mode-toggle">
+                                    <span></span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="container">
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                  <div class="imp-links">
+                        <a href="#">
+                              <i class="icofont-news"></i>
+                              Latest News
+                        </a>
+                        <a href="#">
+                              <i class="icofont-users-alt-4"></i>
+                              Friends
+                        </a>
+                        <a href="#">
+                              <i class="icofont-ui-user-group"></i>
+                              Group
+                        </a>    
+                        <a href="#">
+                              <i class="icofont-cart"></i>
+                              Marketplace
+                        </a>
+                        <a href="#">
+                              <i class="icofont-ui-video"></i>
+                              Watch
+                        </a>
+                        <a href="#">
+                              See more
+                        </a>
+                  </div>   
+                  <div class="shortcut-links">
+                        <p>Your Shortcuts</p>
+                        <a href="#">
+                              <img src="image/shortcut-imgae-1.png" alt="Shortcut Image Description">
+                              Web Developer  
+                        </a>
+                        <a href="#">
+                              <img src="/image/shortcut-imgae-2.png" alt="Shortcut Image Description">
+                              Web Front-end
+                        </a>
+                        <a href="#">
+                              <img src="/image/shortcut-imgae-3.png" alt="Shortcut Image Decription">
+                              Web Design Courses
+                        </a>
+                        <a href="#">
+                              <img src="/image/shortcut-imgae-4.png" alt="">
+                              Full Stack Web
+                        </a>
+                  </div>               
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                  <div class="story-gallery">
+                        <div class="story-item story-item-0">
+                              <i class="icofont-plus-circle"></i>
+                              <p class="story-item-name">Lady Gaga</p>
+                        </div>
+                        <div class="story-item story-item-2">
+                              <img class="story-item-image" src="/image/online-friend-image-2.png" width="40" height="40">
+                              <p class="story-item-name">Dua Lipa</p>
+                        </div>
+                        <div class="story-item story-item-3">
+                              <img class="story-item-image" src="/image/online-friend-image-3.png" width="40" height="40">
+                              <p class="story-item-name">Cruella</p>
+                        </div>
+                        <div class="story-item story-item-1">
+                              <img class="story-item-image" src="/image/online-friend-image-1.png" width="40" height="40">
+                              <p class="story-item-name">Lady Gaga</p>
+                        </div>
+                        <div class="story-item story-item-1">
+                              <img class="story-item-image" src="/image/online-friend-image-2.png" width="40" height="40">
+                              <p class="story-item-name">Dua Lipa</p>
+                        </div>
+                  </div>
+
+                  <div class="write-post-container">
+                        <div class="user-profile">
+                              <div class="user-status">
+                                    <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                    <div class="user-info">
+                                          <p>Minh Vo</p>
+                                          <small>
+                                                <i class="icofont-earth"></i>
+                                                Public
+                                          </small>
+                                    </div>
+                              </div>
+                              <div class="user-post-more">
+                                    <i class="icofont-gear"></i>
+                              </div>
+                        </div>
+                        <div class="post-input-container">
+                              <textarea rows="2" placeholder="What's on your mind, Minh!?"></textarea>
+                              <div class="add-post-link">
+                                   <a href="#">
+                                          <i class="icofont-video-cam" style="color: red;"></i>
+                                          Live Video
+                                   </a>
+                                   <a href="#">
+                                          <i class="icofont-image" style="color: green;"></i>
+                                          Photo/Video
+                                    </a>
+                                    <a href="#">
+                                          <i class="icofont-simple-smile" style="color:yellow"></i>
+                                          Feeling/Activity
+                                   </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="post-container">
+                        <div class="post-container-item">
+                              <div class="user-profile">
+                                    <div class="user-status">
+                                          <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                          <div class="user-info">
+                                                <p>Minh Vo</p>
+                                                <span>July 10 2021, 1:43 pm</span>
+                                                <small>
+                                                      <i class="icofont-earth"></i>
+                                                      Public
+                                                </small>
+                                          </div>
+                                    </div>
+                                    <div class="user-post-more">
+                                          <i class="icofont-gear"></i>
+                                    </div>
+                              </div>
+                              <div class="post-content">
+                                    <p class="post-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          Ad cumque sequi quibusdam! Perferendis voluptatum delectus consectetur corrupti excepturi, 
+                                          omnis at, id deleniti, rem odio ab? Sapiente odio nemo nam cumque.
+                                          <a href="#">#MySocial</a>
+                                          <a href="#">#MyFavorite</a>
+                                    </p>
+                                    <img src="/image/advertisement-image.png" alt="" class="post-image">
+                              </div>
+                              <div class="post-info">
+                                    <ul class="post-activity">
+                                          <li class="active">
+                                                <i class="icofont-like"></i>
+                                                123
+                                          </li>
+                                          <li>
+                                                <i class="icofont-ui-text-chat"></i>
+                                                99
+                                          </li>
+                                          <li>
+                                                <i class="icofont-reply"></i>
+                                                72
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                        <div class="post-container-item">
+                              <div class="user-profile">
+                                    <div class="user-status">
+                                          <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                          <div class="user-info">
+                                                <p>Minh Vo</p>
+                                                <span>July 10 2021, 1:43 pm</span>
+                                                <small>
+                                                      <i class="icofont-earth"></i>
+                                                      Public
+                                                </small>
+                                          </div>
+                                    </div>
+                                    <div class="user-post-more">
+                                          <i class="icofont-gear"></i>
+                                    </div>
+                              </div>
+                              <div class="post-content">
+                                    <p class="post-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          Ad cumque sequi quibusdam! Perferendis voluptatum delectus consectetur corrupti excepturi, 
+                                          omnis at, id deleniti, rem odio ab? Sapiente odio nemo nam cumque.
+                                          <a href="#">#MySocial</a>
+                                          <a href="#">#MyFavorite</a>
+                                    </p>
+                                    <img src="/image/shortcut-imgae-1.png" alt="" class="post-image">
+                              </div>
+                              <div class="post-info">
+                                    <ul class="post-activity">
+                                          <li class="active">
+                                                <i class="icofont-like"></i>
+                                                123
+                                          </li>
+                                          <li>
+                                                <i class="icofont-ui-text-chat"></i>
+                                                99
+                                          </li>
+                                          <li>
+                                                <i class="icofont-reply"></i>
+                                                72
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                        <div class="post-container-item">
+                              <div class="user-profile">
+                                    <div class="user-status">
+                                          <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                          <div class="user-info">
+                                                <p>Minh Vo</p>
+                                                <span>July 10 2021, 1:43 pm</span>
+                                                <small>
+                                                      <i class="icofont-earth"></i>
+                                                      Public
+                                                </small>
+                                          </div>
+                                    </div>
+                                    <div class="user-post-more">
+                                          <i class="icofont-gear"></i>
+                                    </div>
+                              </div>
+                              <div class="post-content">
+                                    <p class="post-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          Ad cumque sequi quibusdam! Perferendis voluptatum delectus consectetur corrupti excepturi, 
+                                          omnis at, id deleniti, rem odio ab? Sapiente odio nemo nam cumque.
+                                          <a href="#">#MySocial</a>
+                                          <a href="#">#MyFavorite</a>
+                                    </p>
+                                    <img src="/image/shortcut-imgae-3.png" alt="" class="post-image">
+                              </div>
+                              <div class="post-info">
+                                    <ul class="post-activity">
+                                          <li class="active">
+                                                <i class="icofont-like"></i>
+                                                123
+                                          </li>
+                                          <li>
+                                                <i class="icofont-ui-text-chat"></i>
+                                                99
+                                          </li>
+                                          <li>
+                                                <i class="icofont-reply"></i>
+                                                72
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                        <div class="post-container-item">
+                              <div class="user-profile">
+                                    <div class="user-status">
+                                          <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                          <div class="user-info">
+                                                <p>Minh Vo</p>
+                                                <span>July 10 2021, 1:43 pm</span>
+                                                <small>
+                                                      <i class="icofont-earth"></i>
+                                                      Public
+                                                </small>
+                                          </div>
+                                    </div>
+                                    <div class="user-post-more">
+                                          <i class="icofont-gear"></i>
+                                    </div>
+                              </div>
+                              <div class="post-content">
+                                    <p class="post-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          Ad cumque sequi quibusdam! Perferendis voluptatum delectus consectetur corrupti excepturi, 
+                                          omnis at, id deleniti, rem odio ab? Sapiente odio nemo nam cumque.
+                                          <a href="#">#MySocial</a>
+                                          <a href="#">#MyFavorite</a>
+                                    </p>
+                                    <img src="/image/shortcut-imgae-2.png" alt="" class="post-image">
+                              </div>
+                              <div class="post-info">
+                                    <ul class="post-activity">
+                                          <li class="active">
+                                                <i class="icofont-like"></i>
+                                                123
+                                          </li>
+                                          <li>
+                                                <i class="icofont-ui-text-chat"></i>
+                                                99
+                                          </li>
+                                          <li>
+                                                <i class="icofont-reply"></i>
+                                                72
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+
+                        <div class="post-container-item">
+                              <div class="user-profile">
+                                    <div class="user-status">
+                                          <img src="/image/user-avatar.png" alt="User Avatar" width="40" height="40">
+                                          <div class="user-info">
+                                                <p>Minh Vo</p>
+                                                <span>July 10 2021, 1:43 pm</span>
+                                                <small>
+                                                      <i class="icofont-earth"></i>
+                                                      Public
+                                                </small>
+                                          </div>
+                                    </div>
+                                    <div class="user-post-more">
+                                          <i class="icofont-gear"></i>
+                                    </div>
+                              </div>
+                              <div class="post-content">
+                                    <p class="post-text">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                          Ad cumque sequi quibusdam! Perferendis voluptatum delectus consectetur corrupti excepturi, 
+                                          omnis at, id deleniti, rem odio ab? Sapiente odio nemo nam cumque.
+                                          <a href="#">#MySocial</a>
+                                          <a href="#">#MyFavorite</a>
+                                    </p>
+                                    <img src="/image/advertisement-image.png" alt="" class="post-image">
+                              </div>
+                              <div class="post-info">
+                                    <ul class="post-activity">
+                                          <li class="active">
+                                                <i class="icofont-like"></i>
+                                                123
+                                          </li>
+                                          <li>
+                                                <i class="icofont-ui-text-chat"></i>
+                                                99
+                                          </li>
+                                          <li>
+                                                <i class="icofont-reply"></i>
+                                                72
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+
+                  <button type="button" class="load-more-btn">Load More</button>
+            </div>
+            <!-- Right Sidebar -->
+            <div class="right-sidebar">
+                  <div class="sidebar-title">
+                        <h4>Events</h4>
+                        <a href="#">See All</a>
+                  </div>
+
+                  <div class="event">
+                        <div class="left-event">
+                              <h3>18</h3>
+                              <span>March</span>
+                        </div>
+                        <div class="right-event">
+                              <h4>Social Media</h4>
+                              <p>
+                                    <i class="icofont-location-pin"></i>
+                                    Willson Tech Park
+                              </p>
+                              <a href="#">More Info</a>
+                        </div>
+                  </div>
+                  <div class="event">
+                        <div class="left-event">
+                              <h3>10</h3>
+                              <span>July</span>
+                        </div>
+                        <div class="right-event">
+                              <h4>Mobile Marketing</h4>
+                              <p>
+                                    <i class="icofont-location-pin"></i>
+                                    Willson Tech Park
+                              </p>
+                              <a href="#">More Info</a>
+                        </div>
+                  </div>
+
+                  <div class="sidebar-ads">
+                        <div class="sidebar-title">
+                              <h4>Advertisement</h4>
+                              <a href="#">Close</a>
+                        </div>
+                        <div class="sidebar-ads-item">
+                              <img class="img-fluid" src="/image/advertisement-image.png">
+                        </div>
+                  </div>
+                  
+                  <div class="sidebar-conversation">
+                        <div class="sidebar-title">
+                              <h4>Conversation</h4>
+                              <a href="#">Hide Chat</a>
+                        </div>
+                        <div class="sidebar-conversation-item">
+                              <div class="conversation-item-image">
+                                    <img src="/image/online-friend-image-1.png" width="50" height="50">
+                                    <span class="online-stick"></span>
+                              </div>
+                              <p class="conversation-item-name">Lady Gaga</p>
+                        </div>
+                        <div class="sidebar-conversation-item">
+                              <div class="conversation-item-image">
+                                    <img src="/image/online-friend-image-2.png" width="50" height="50">
+                                    <span class="online-stick"></span>
+                              </div>
+                              <p class="conversation-item-name">Dua Lipa</p>
+                        </div>
+                        <div class="sidebar-conversation-item">
+                              <div class="conversation-item-image">
+                                    <img src="/image/online-friend-image-3.png" width="50" height="50">
+                                    <span class="online-stick"></span>
+                              </div>
+                              <p class="conversation-item-name">Cruella</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script src="/main.js" type="text/javascript"></script>
+</body>
+</html>
